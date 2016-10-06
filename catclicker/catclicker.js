@@ -14,12 +14,12 @@ var model = {
       title: "Pow",
       image: "img/cat3.jpg",
       counter: 0
-    }
+    },
     {
       title: "Piw",
       image: "img/cat4.jpg",
       counter: 0
-    }
+    },
     {
       title: "Puw",
       image: "img/cat5.jpg",
@@ -27,24 +27,6 @@ var model = {
     }
   ]
 };
-
-/*var controller = {
-
-};
-
-var view = {
-  list: {
-    title: ""
-  },
-  detail: {
-    title: "",
-    image: "",
-    counter: 1
-  }
-};*/
-
-// Initialise starting item
-
 
 // Create list view
 model.display = function() {
