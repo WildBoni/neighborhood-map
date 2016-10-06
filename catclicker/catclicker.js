@@ -15,6 +15,16 @@ var model = {
       image: "img/cat3.jpg",
       counter: 0
     }
+    {
+      title: "Piw",
+      image: "img/cat4.jpg",
+      counter: 0
+    }
+    {
+      title: "Puw",
+      image: "img/cat5.jpg",
+      counter: 0
+    }
   ]
 };
 
@@ -59,22 +69,15 @@ function viewIt(idtag) {
   document.getElementById('viewer').innerHTML="<img id='foto' src='"+model.items[idtag].image+"' />";
   document.getElementById('counter').innerHTML=(model.items[idtag].counter);
   this.catCount = model.items[idtag].counter;
-  this.catNum = idtag;
+  this.catNum = Number(idtag);
   clickIt(this.catCount, this.catNum);
 }
 
 // Enable click on image
 function clickIt(countVal, catVal){
   document.getElementById('foto').addEventListener("click", function(){
-    this.tval = countVal+1;
-    model.items[catVal].counter = this.tval;
-    document.getElementById('counter').innerHTML = this.tval;
+    countVal = countVal+1;
+    model.items[catVal].counter = countVal;
+    document.getElementById('counter').innerHTML = countVal;
   },false);
 }
-
-// Update the click count
-/*function countIt(val) {
-  tval = val+1;
-  model.items[val].counter = tval;
-  document.getElementById('counter').innerHTML = tval;
-}*/
