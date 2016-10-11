@@ -10,3 +10,7 @@ User compiles "address" and "city" text fields and the page loads informations a
 ## Catclicker
 
 Catclicker is a simple application used for Udacity Javascript Patterns course.
+
+## ud989-cat-clicker-ko-starter-master
+
+ud989-cat-clicker-ko-starter-master is a Catclicker-like application written using Knockout.js
