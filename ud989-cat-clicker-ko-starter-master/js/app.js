@@ -7,7 +7,15 @@ var ViewModel = function(){
   this.incrementCounter = function() {
     this.clickCount(this.clickCount()+1);
   };
-
+  this.level = ko.computed(function() {
+    if(this.clickCount() > 10) {
+      return 'adult';
+    }
+    else if(this.clickCount() > 5) {
+      return 'young';
+    }
+    else return 'newborn';
+  }, this);
   this.newborn = ko.computed(function(){
     return this.clickCount() >= 0;
   }, this);
@@ -19,6 +27,10 @@ var ViewModel = function(){
   this.adult = ko.computed(function(){
     return this.clickCount() >= 8;
   }, this);
-}
+
+
+  this.nicknames = ko.observableArray(["fluffy", "Paw", "flurry"]);
+
+};
 
 ko.applyBindings(new ViewModel());
