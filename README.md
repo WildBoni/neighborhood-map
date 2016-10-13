@@ -11,6 +11,14 @@ User compiles "address" and "city" text fields and the page loads informations a
 
 Catclicker is a simple application used for Udacity Javascript Patterns course.
 
-## ud989-cat-clicker-ko-starter-master
+## Catclicker Knockout
 
-ud989-cat-clicker-ko-starter-master is a Catclicker-like application written using Knockout.js
+Catclicker Knockout is a Catclicker-like application written using Knockout.js
+
+## Todo app
+
+Todo application written using Backbone
+
+## Google-maps-apis
+
+Google Map with markers and advanced functionalities created for Google Maps Apis course
